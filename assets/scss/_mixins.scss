@@ -1,0 +1,37 @@
+@mixin button {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 0.4rem 1rem;
+}
+
+@mixin buttonhover {
+    background-color: white;
+    color: black;
+}
+
+@mixin aniCircle {
+    animation: circle  10s infinite linear;
+    @keyframes circle {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+@mixin flow {
+    animation: flow 30s .1s infinite linear backwards;
+    @keyframes flow {
+        0% {
+            transform: translateX(0%) ;
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+}
